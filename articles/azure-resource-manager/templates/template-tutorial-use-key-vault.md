@@ -69,7 +69,7 @@ $templateUri = "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/
 New-AzResourceGroup -Name $resourceGroupName -Location $location
 New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateUri $templateUri -keyVaultName $keyVaultName -adUserId $adUserId -secretValue $secretValue
 
-Write-Host "Press [ENTER] to continue ..."
+Read-Host -Prompt "Press [ENTER] to continue ..."
 ```
 
 > [!IMPORTANT]
